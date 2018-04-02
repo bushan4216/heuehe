@@ -8,22 +8,27 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript">
 var myVar;
-function rel(){
- location.reload();
-}
+
+
+
 function myFunction() {//typing start button 
  document.getElementById("abc").disabled = false;
+
   var nm = 61;//time 
+
+
+
   function myLoop () {
   setTimeout(function () {
       nm--;
 
-  if (nm <61&& nm>-1) {
+  if (nm <61 && nm>-1) {
 
   if(nm==0){
 document.getElementById("abc").disabled = true;
-document.getElementById("time").innerHTML =nm;
 document.getElementById("start").disabled = true;
+document.getElementById("time").innerHTML =nm;
+
 
 document.body.onkeyup = function(e) {
 if( e.keyCode == 32 ) {
@@ -76,52 +81,44 @@ renderHits();
 var ht;
 var renderHits = function() {
 hitElement.innerHTML = hits;
-var cars = ["the ", "numbers ","in ","the ","table ","specify ","the ","first ","browser ","version ","hedge ","stresses ","the ","important ","of ","laughter ","because ","laughter ","induces ","secretion ","of ","good ","catecholamines ","which ","are ","hormones ","produced ","by ","adrenal ","gland ","; ","they ","can ","be ","both ","beneficial ","and ","harmful ","when ","a ","person ","is ","angry ","but ","beneficial ","if ","he ","laughs"];
+var cars = ["the ", "numbers ","in ","the ","table ","specify ","the ","first ","browser ","version ","hedge ","stresses ","the ","important ","of ","laughter ","because ","laughter ","induces ","secretion ","of ","good ","catecholamines ","which ","are ","hormones ","produced ","by ","adrenal ","gland ","; ","they ","can ","be ","both ","beneficial ","and ","harmful ","they ","are ","harmful ","when ","a ","person ","is ","angry ","but ","beneficial ","if ","he ","laughs"];
 var i=hits-1;
 var ht=document.getElementById("abc").value;
 var htText=document.getElementById("abc");
 
    htText.value="";
-  var count=10;
+  // var count=10;
 
 
 var a=ht;
-var b=cars[i];
-var c=b;
+var c=cars[i];
 // alert(a+"    "+c);
 // var n = a.localeCompare(c);
-var ab=0;
+// var ab=0;
 
 if (a.localeCompare(c)) {
 
-  // document.getElementById("dem").innerHTML =ht;
 document.getElementById(i).style.color ="red";
-// document.getElementById("jk").innerHTML =sum*1;
-// sum++;
-// $("#jk").append("1");
 
-  // document.getElementById("jk").innerHTML =count*i;
 }
 else{
 
 document.getElementById(i).style.color ="#05d605";
 document.getElementById("sc").innerHTML =sum*1;
-if(sum==30)
-{
-  alert("Very Good");
-}
+
+
 sum++;
-// $("#sc").append("1");
 
 
-}
 
 }
 
-var resetHits = function() {
-hits = 0;
-renderHits();
 }
+
+// var resetHits = function() {
+// hits = 0;
+// renderHits();
+// }
 
 
 
@@ -135,8 +132,19 @@ $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
+<script type="text/javascript">
+	function reloadfunction(){
+ location.reload();
+}
+
+</script>
   </head>
   <body>
+  	<br>
+  	 	<br>
+ 	<br>
+ 	<br>
+
   	<div class="container">
   		<div class="row">
   			<div class="col-sm-1"></div>
@@ -163,15 +171,15 @@ $(document).ready(function(){
 <span id="28"> adrenal</span><span id="29"> gland</span>
 <span id="30"> ;</span><span id="31"> they</span>
 <span id="32"> can</span><span id="33"> be</span>
-<span id="33"> both</span><span id="34"> beneficial</span>
-<span id="35"> and</span><span id="36"> harmful</span>
-<span id="37"> they</span><span id="38"> are</span>
-<span id="39"> harmful</span><span id="40"> when</span>
-<span id="41"> a</span><span id="42"> person</span>
-<span id="43"> is</span><span id="44"> angry</span>
-<span id="45"> but</span><span id="46"> benificial</span>
-<span id="47"> if</span><span id="48"> he</span>
-<span id="49"> laughs</span>
+<span id="34"> both</span><span id="35"> beneficial</span>
+<span id="36"> and</span><span id="37"> harmful</span>
+<span id="38"> they</span><span id="39"> are</span>
+<span id="40"> harmful</span><span id="41"> when</span>
+<span id="42"> a</span><span id="43"> person</span>
+<span id="44"> is</span><span id="45"> angry</span>
+<span id="46"> but</span><span id="47"> benificial</span>
+<span id="48"> if</span><span id="49"> he</span>
+<span id="50"> laughs</span>
 
 
 
@@ -184,7 +192,7 @@ $(document).ready(function(){
 </h3></center>
 <center>  <input type="text" size="40" onkeypress="my(event)" id="abc" disabled>
   <button  id="time" type="button" class="btn btn-warning btn-md" style="    height: 32px;"></button>
-  <button id="myid" onclick="rel()" type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-time"></span> Try Again</button></center>
+  <button id="myid" onclick="reloadfunction()" type="button" class="btn btn-success btn-md"><span class="glyphicon glyphicon-time"></span> Try Again</button></center>
 
 <br>
   <h1 style=" margin-left:42px;">Score:- </h1><h1 style="    margin-left: 179px;
